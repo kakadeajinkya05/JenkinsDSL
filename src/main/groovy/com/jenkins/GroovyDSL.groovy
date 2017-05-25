@@ -2,12 +2,13 @@ job('Master Build and Test') {
     scm {
         git {
             remote {
-                url 'https://github.com/kakadeajinkya05/reservation.git'
+                url ' https://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
+				
             }
             extensions {
                 wipeOutWorkspace()
             }
-            branch '*/master'
+            branch '*/MD_MASTER*'
         }
     }
 
