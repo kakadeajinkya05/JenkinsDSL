@@ -30,5 +30,8 @@ job('Master Build and Test') {
 
     wrappers {
         colorizeOutput()
+	    credentialsBinding {
+            usernamePassword('MY_USERNAME','MY_PASSWORD')
+        }
     }
 }
