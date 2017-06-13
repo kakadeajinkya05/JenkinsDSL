@@ -9,6 +9,7 @@ job('Master Build and Test') {
                 wipeOutWorkspace()
             }
             branch '*/MD_MASTER*'
+	    scanCredentialsId('bbid')
         }
     }
 
