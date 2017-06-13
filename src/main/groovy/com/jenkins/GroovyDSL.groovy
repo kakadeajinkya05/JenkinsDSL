@@ -3,13 +3,13 @@ job('Master Build and Test') {
         git {
             remote {
                 url ' https://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
-				
+		credentials('bbid')		
             }
             extensions {
                 wipeOutWorkspace()
             }
             branch '*/MD_MASTER*'
-	    credentials('bbid')
+	    
         }
     }
 
