@@ -3,7 +3,9 @@ job('Master Build and Test') {
         git {
             remote {
                 url ' http://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
-		credentials 'bbid'		
+		//credentials 'bbid'
+		credentials 'VauId'    
+		    
             }
             extensions {
                 wipeOutWorkspace()
@@ -34,7 +36,7 @@ job('Master Build and Test') {
     wrappers {
         colorizeOutput()
 	    credentialsBinding {
-            usernamePassword('MY_USERNAME','MY_PASSWORD')
+            usernamePassword('MY_USERNAME','MY_PASSWORD', 'VauId')
         }
     }
 }
