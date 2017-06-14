@@ -4,7 +4,7 @@ job('Master Build and Test') {
             remote {
                 url ' http://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
 		//credentials 'bbid'
-		credentials 'VauId'    
+		credentials('MY_USERNAME','MY_PASSWORD', 'VauId')   
 		    
             }
             extensions {
