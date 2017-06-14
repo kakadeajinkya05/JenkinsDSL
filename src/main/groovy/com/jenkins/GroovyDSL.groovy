@@ -8,7 +8,7 @@ job('Master Build and Test') {
             extensions {
                 wipeOutWorkspace()
             }
-            branch '*/MD_MASTER*'
+            branch '*/MD_MASTER_DEV'
 	    
         }
     }
