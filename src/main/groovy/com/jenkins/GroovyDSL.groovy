@@ -26,7 +26,7 @@ job('Master Build and Test') {
     triggers {
 	    
         scm('* * * * *') {
-         //   ignorePostCommitHooks()
+            ignorePostCommitHooks()
         }
 	    bitbucketPush()
     }
