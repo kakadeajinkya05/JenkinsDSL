@@ -2,7 +2,7 @@ job('Master Build and Test') {
     scm {
         git {
             remote {
-                url ' http://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
+                url ' https://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
 		credentials 'bbid'		
             }
             extensions {
