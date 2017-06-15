@@ -1,4 +1,4 @@
-job('Recrument Portal Build and Test') {
+job('Recruitment Portal Build and Test') {
     scm {
         git {
             remote {
