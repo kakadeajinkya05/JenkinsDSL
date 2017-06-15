@@ -1,14 +1,16 @@
-job('Master Build and Test') {
+job('Recrument Portal Build and Test') {
     scm {
         git {
             remote {
-                url ' https://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
-				
+                url 'https://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
+		credentials 'bbid'
+				    
             }
             extensions {
                 wipeOutWorkspace()
             }
-            branch '*/MD_MASTER*'
+            branch '*/MD_MASTER_DEV'
+	    
         }
     }
 
@@ -22,9 +24,11 @@ job('Master Build and Test') {
     }
 
     triggers {
+	    
         scm('* * * * *') {
             ignorePostCommitHooks()
         }
+	    bitbucketPush()
     }
 
 
