@@ -27,6 +27,8 @@ Prerequisites:
 * install Job DSL Plugin
 * install Permissive Script Security Plugin
 * install Authorize Project Plugin
+* install Build Monitor View Plugin
+
 
 1. Create a Jenkins Job using the Free-style project style to run your DSL Scripts. This is called a "Seed" job
 2. Configure the seed job, by adding a "Build Step" of type "Process Job DSLs" and paste in the body of the DSL
