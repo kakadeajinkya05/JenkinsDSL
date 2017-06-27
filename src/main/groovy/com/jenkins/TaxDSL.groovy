@@ -2,14 +2,14 @@ job('Recruitment Portal Build and Test') {
     scm {
         git {
             remote {
-                url 'https://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
-		credentials 'bbid'
+                url 'https://itsubproject@bitbucket.org/itsubproject/taxsubmission.git'
+		credentials 'itid'
 				    
             }
             extensions {
                 wipeOutWorkspace()
             }
-            branch '*/MD_MASTER_DEV'
+            branch '*/phase3'
 	    
         }
     }
