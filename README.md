@@ -27,7 +27,9 @@ Prerequisites:
 * install Job DSL Plugin
 * install Permissive Script Security Plugin
 * install Authorize Project Plugin
+* install Bitbucket Plugin
 * install Build Monitor View Plugin
+* install Radiator View Plugin
 
 
 1. Create a Jenkins Job using the Free-style project style to run your DSL Scripts. This is called a "Seed" job
