@@ -3,6 +3,7 @@ buildMonitorView('Radiator View') {
     jobs {
         name('Recruitment Portal Build and Test')
         name('Tax Portal Build and Test')
+        name('Recruit Portal Build and Test')
         
     }
 }
