@@ -1,15 +1,15 @@
-job('Recruit Portal Build and Test') {
+job('iRecruit Service Build and Test') {
 	scm {
 		git {
 			remote {
-				url 'https://ositechportal@bitbucket.org/ositechportal/recruit-portal.git'
-		credentials 'rp2id'
+				url 'https://ositechportal@bitbucket.org/ositechportal/irecruit-service.git'
+		credentials 'bbid'
 					
 			}
 			extensions {
 				wipeOutWorkspace()
 			}
-			branch '*/master'
+			branch '*/phase1'
 		
 		}
 	}
