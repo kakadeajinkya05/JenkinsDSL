@@ -35,4 +35,16 @@ job('Recruitment Portal Build and Test') {
 	wrappers {
 		colorizeOutput()
 	}
+	
+	publishers {
+		archiveJunit('**/*.xml') {
+		allowEmptyResults()
+		retainLongStdout()
+		healthScaleFactor(1.5)
+		testDataPublishers {
+			allowClaimingOfFailedTests()
+			publishFlakyTestsReport()
+			publishTestStabilityData()
+		}
+	}
 }

@@ -30,6 +30,10 @@ Prerequisites:
 * install Bitbucket Plugin
 * install Build Monitor View Plugin
 * install Radiator View Plugin
+* install Green Plugin
+* install Environment Injector Plugin
+* install Flaky Test Handler plugin
+* install Test stability history Plugin 
 
 
 1. Create a Jenkins Job using the Free-style project style to run your DSL Scripts. This is called a "Seed" job
