@@ -3,14 +3,10 @@ job('Recruitment Portal Build and Test') {
 		git {
 			remote {
 				url 'https://ositechportal@bitbucket.org/ositechportal/osi-recruitment-portal.git'
-		credentials 'bbid'
-					
+				credentials 'bbid'
 			}
-			extensions {
-				wipeOutWorkspace()
-			}
+			extensions { wipeOutWorkspace() }
 			branch '*/MD_MASTER_DEV'
-		
 		}
 	}
 
@@ -24,27 +20,24 @@ job('Recruitment Portal Build and Test') {
 	}
 
 	triggers {
-		
-		scm('* * * * *') {
-			ignorePostCommitHooks()
-		}
+
+		scm('* * * * *') { ignorePostCommitHooks() }
 		bitbucketPush()
 	}
 
 
-	wrappers {
-		colorizeOutput()
-	}
-	
+	wrappers { colorizeOutput() }
+
 	publishers {
 		archiveJunit('**/*.xml') {
-		allowEmptyResults()
-		retainLongStdout()
-		healthScaleFactor(1.5)
-		testDataPublishers {
-			allowClaimingOfFailedTests()
-			publishFlakyTestsReport()
-			publishTestStabilityData()
+			allowEmptyResults()
+			retainLongStdout()
+			healthScaleFactor(1.5)
+			testDataPublishers {
+				allowClaimingOfFailedTests()
+				publishFlakyTestsReport()
+				publishTestStabilityData()
+			}
 		}
 	}
 }
