@@ -1,8 +1,4 @@
 job('iRecruit Service Build and Test') {
-	environmentVariables {
-        env('JASYPT_ENCRYPTOR_PASSWORD', 'secret')
-    }
-	
 	scm {
 		git {
 			remote {
